@@ -24,63 +24,87 @@
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Personal Training</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
-        <a href="" class="quote-button"> GET QUOTATION </a>
+        <button class="quote-button"> GET QUOTATION </button>
+      </div>
+      <div class="modal-background">
+        <div class="modal">
+          <h2 id="quotation-heading">GET A QUOTATION</h2>
+          <form id="quotation-form" action="" method="post">
+            <input type="text" name="name" id="" placeholder="Enter your name">
+            <input type="email" name="email" id="" placeholder="Enter your email">
+            <input type="tel" name="email" id="" placeholder="Enter Phone Number">
+            <select name="event" id="">
+              <option>CHOOSE EVENT</option>
+              <option value="">EVENT - 1</option>
+              <option value="">EVENT - 2</option>
+              <option value="">EVENT - 3</option>
+              <option value="">EVENT - 4</option>
+              <option value="">EVENT - 5</option>
+              <option value="">EVENT - 6</option>
+              <option value="">EVENT - 7</option>
+              <option value="">EVENT - 8</option>
+            </select>
+            <textarea name="message" id="quotation-form-message" cols="15" rows="5" placeholder="Brief us about your event"></textarea>
+            <input id="quote-submit" type="submit" value="Get quote">
+          </form>
+          <i id="modal-close" class="fas fa-times"></i>
+        </div>
       </div>
     </div>
   </section>
@@ -150,5 +174,9 @@
     <path id="blob" d="M331,313.5Q177,377,156,213.5Q135,50,310,150Q485,250,331,313.5Z" fill="url(#pattern)"></path>
   </svg>
   <?php require 'assets/footer.php' ?>
+  <script src="javascript/navbar.js"></script>
+  <script src="javascript/events.js"></script>
+  <script>
+    </
 </body>
 </html>

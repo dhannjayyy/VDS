@@ -38,13 +38,11 @@
     <div id="lower-footer" data-aos="slide-down" data-aos-offset="-200" data-aos-delay="250">
         <p>&copy 2021 Voyage Dance Studio All RIghts Reserved.</p>
         <div class="credits">
-            MADE BY <a href="#" target="_blank"> Dhananjay</a>
+            DEVELOPER : <a href="#" target="_blank"> Dhananjay</a>
         </div>
     </div>
-<script src="Javascript/particles.js-master/particles.js-master/particles.js"></script>
-<script src="Javascript/particles.js-master/particles.js-master/demo/js/app.js"></script>
+
 <script src="https://kit.fontawesome.com/3cf4169562.js" crossorigin="anonymous"></script>
-<script src="Javascript/index.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init({

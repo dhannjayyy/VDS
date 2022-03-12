@@ -15,18 +15,17 @@ const navSlide = () =>{
             element.style.transitionDelay = `${index*delay}s`;
         });
         //hamburger animation
-        burger.classList.toggle('hamburger-toggle');
+        // burger.classList.toggle('hamburger-toggle');
     });
 }
 
-navSlide();
 
 //for hero section animations 
 const animation = () =>{
     const hero = document.getElementById('hero');
-    const navigation = document.querySelector('.navigation')
-    const vds = document.getElementById('vds')
-    const heroPara = document.querySelector("#hero-para")
+    const navigation = document.querySelector('.navigation');
+    const vds = document.getElementById('vds');
+    const heroPara = document.querySelector("#hero-para");
     const heroBefore = document.querySelector('.heroBefore');
     const heroAfter = hero.querySelector('.heroAfter');
     window.addEventListener("load",()=>{
@@ -36,7 +35,6 @@ const animation = () =>{
         navigation.style.transform = "translateY(0%)",
         vds.style.transform = "translateX(0%)",
         heroPara.style.transform = "translateX(0%)",
-        console.log(vds.style)
         setTimeout(() => {
             heroAfter.style.display = "none";
             heroBefore.style.display = "none";
@@ -44,7 +42,7 @@ const animation = () =>{
     })
 }
 
-// animation();
+
 
 //for registration
 const registration = () =>{
@@ -62,7 +60,6 @@ const registration = () =>{
     })
 }
 
-registration();
 
 // TESTIMONIALS CAROUSEL
 
@@ -71,7 +68,7 @@ const changeTestimonial = () =>{
     const leftButton = document.querySelector(".fa-chevron-left");
     const rightButton = document.getElementById("testimonials").lastElementChild;
     const carouselSection = document.getElementById("testimonials");
-
+    
     rightButton.addEventListener("click",()=>{
         carouselSection.scrollBy(width,0);
     })
@@ -81,7 +78,6 @@ const changeTestimonial = () =>{
 
 }
 
-changeTestimonial();
 
 // FOR CHANGING LOGO COLOR
 
@@ -94,4 +90,14 @@ const logoColor = ()=>{
     }
 }
 
-logoColor();
+
+//function to execute all other functions
+const app = () =>{
+    animation();
+    logoColor();
+    changeTestimonial();
+    registration();
+    navSlide();
+}
+
+app();

@@ -61,10 +61,10 @@ nav.navigation{
   display: flex;
   justify-content: space-between;
   padding:4%;
-  padding-top:2%;
-  /* transform: translateY(-100%); */
-  /* transition: transform 1000ms ease; */
-  /* transition-delay: 2050ms; */
+  padding-top:0%;
+  transform: translateY(-100%); 
+  transition: transform 1000ms ease;
+  transition-delay: 2050ms;
 }
 
 
@@ -115,9 +115,9 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   font-weight: 400;
   color: #3D0000;
   margin-bottom: 5%;
-  /* transform: translateX(-100%); */
-  /* transition: transform 1000ms ease; */
-  /* transition-delay: 2050ms; */
+  transform: translateX(-100%); 
+  transition: transform 1000ms ease;
+  transition-delay: 2050ms;
 }
 
 #hero-para{
@@ -126,10 +126,11 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   line-height: 150%;
   letter-spacing: 0.15em;
   font-size: 90%;
-  /* transform: translateX(-100%); */
-  /* transition: transform 1000ms ease; */
-  /* transition-delay: 2050ms; */
+  transform: translateX(-100%);
+  transition: transform 1000ms ease;
+  transition-delay: 2050ms;
 }
+
 
 #hamburger div{
   height: 2%;
@@ -210,7 +211,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   }
 
   nav.navigation{
-    margin-top: 5%;
+    margin-top: 2%;
   }
 
   nav.navigation ul{
@@ -233,19 +234,23 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
     align-items: flex-end;
     justify-content: center;
     cursor: pointer;
-    overflow-x: visible;
+    overflow:visible;
     margin-bottom: 5%;
-    margin-top:-4%;
-    transform: translateY(-100%);
-    transition: transform 1s ease-in-out;
-    overflow-y: visible;
+    /* margin-top:-4%; */
   }
+  
   #hamburger div{
+    overflow:visible;
     height:1%;
     width:300%;
   }
+
+  .hamburger-toggle{
+    z-index:5000000;
+  }
+
   .hamburger-toggle #line-1{
-    transform: rotateZ(45deg);
+    transform: rotate(45deg) translate(5px,5px);
   }
   .hamburger-toggle #line-2{
     transform: rotateZ(-45deg) translateY(-200%) translateX(25%);
@@ -444,7 +449,6 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   justify-content: center;
   align-items: center;
   transition: transform 500ms ease;
-  transition-delay: 500ms;
 }
 
 .about-cover:hover{
@@ -452,7 +456,6 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
 }
 .about-container:hover .about-cover{
   transform: translateX(-100%);
-
 }
 
 .about-cover span{
@@ -471,9 +474,6 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   border-radius: 5px;
 }
 
-.about-cover:hover .about-cover span::after{
-  transform: scaleX(1);
-}
 
 .about-cover span::before{
   width:80%;
@@ -500,7 +500,9 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   color: #3D0000;
   font-weight: 500;
   cursor:pointer;
-
+  text-decoration: none;
+  width:35%;
+  text-align: center;
 }
 
 
@@ -528,7 +530,6 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
 
 /* tabs */
 
-  
 .class-section{
   display: flex;
   justify-content: center;
@@ -536,10 +537,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   position: relative;
 }
 
-
-
 #particles-js{
-  height: 100vh;
   background:radial-gradient(#E3A6F2,black);
 }
 
@@ -560,17 +558,12 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
 
 .classes-wrapper{
   width: clamp(70%,80%,90%);
-  overflow-y: hidden;
-  /* height: 90%; */
   border-radius: 5px;
   background: rgba(0,0,0,0.2);
   backdrop-filter: blur(5px);
   box-shadow: 10px 10px 15px rgba(0,0,0,0.9), -10px 20px 15px rgba(0,0,0,0.9);
-  position: absolute;
   padding: 25px 30px 0px 30px;
-  /* margin-bottom:10%;
-  margin-top:10%; */
-  /* overflow-y: hidden; */
+  position: absolute;
 }
 
 .classes-wrapper nav{
@@ -636,6 +629,12 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
     display: block;
   }
 
+  @media (max-width:1024px){
+    .class-section{
+      padding-top:5rem;
+      padding-bottom: 5rem;
+    }
+  }
   
 
   
@@ -801,6 +800,10 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   opacity:1 !important;
 }
 
+select{
+  padding-left:0;
+}
+
 input, select{
   margin-top:2%;
   height:3rem;
@@ -811,9 +814,8 @@ input, select{
   background-color: transparent;
   border:none;
   border-bottom: 1px solid white;
+  width:100%;
 }
-
-
 
 option{
   color:white;
@@ -824,6 +826,7 @@ input::placeholder{
   color:white;
   font-weight: 500;
   font-size: 0.9rem;
+  padding-left:0;
 }
 
 input[type = "submit"]{
@@ -845,9 +848,49 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 1;
   filter: invert(1);
   font-size: 1rem;
+
 }
 input[type="date"]::before { 
 	content: attr(data-placeholder);
+  left:0;
+}
+
+small { 
+  display: none;
+}
+
+.form-control{
+  position:relative;
+}
+.fa-check-circle, .fa-exclamation-circle{
+  position:absolute;
+  right:5%;
+  top:40%;
+  visibility: hidden;
+}
+
+.form-control.data-error small{
+  color: #e74c3c;
+  font-weight: bolder;
+  display: block;
+}
+
+.form-control.data-error .fa-exclamation-circle{
+  color: #e74c3c;
+  visibility: visible;
+}
+.form-control.data-success .fa-check-circle{
+  color: #2ecc71;
+  visibility: visible;
+}
+
+/* FOR DATA VALIDATION IN THE FORM  */
+.data-success input{
+  border:2px solid #2ecc71;
+}
+
+.data-error input{
+  border:2px solid #e74c3c;
 }
 
 
@@ -867,6 +910,10 @@ input[type="date"]::before {
           /* height: 110%; */
           overflow-y: visible;
         }
+        .class-section{
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
 
         #booking{
           width:90%;
@@ -883,6 +930,10 @@ input[type="date"]::before {
 
       #classes-header, .classes-wrapper nav label{
         font-size: 90%;
+      }
+      .class-section{
+        padding-top: 12rem;
+        padding-bottom: 12rem;
       }
     }
       
