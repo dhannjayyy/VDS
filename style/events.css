@@ -75,17 +75,46 @@ header.event-page h1::before{
     height:25rem;
     margin:2rem;
     flex:1 1 20rem;
-    background-image: url("../images/EVENTS/eventsAndAnnuals.jpg");
+    background-image: url("../images/EVENTS/eventsAndAnnuals.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: black;
-    background-blend-mode: luminosity;
+    /* background-color: black; */
+    /* background-blend-mode: luminosity; */
     overflow-y: hidden;
     position: relative;
 }
 
 .event:nth-of-type(1){
-    background-image: url("../images/EVENTS/personalTraining.jpg");
+    background-image: url("../images/EVENTS/personalTraining.webp");
+    background-position: center;
+}
+.event:nth-of-type(2){
+    background-image: url("../images/EVENTS/zumba.webp");
+    background-position: center;
+}
+.event:nth-of-type(3){
+    background-image: url("../images/EVENTS/aerobics.webp");
+    background-position: center;
+}
+.event:nth-of-type(4){
+    background-image: url("../images/EVENTS/crossfit.webp");
+}
+.event:nth-of-type(5){
+    background-image: url("../images/EVENTS/wedding.webp");
+}
+.event:nth-of-type(6){
+    background-image: url("../images/EVENTS/stageshows.webp");
+}
+.event:nth-of-type(7){
+    background-image: url("../images/EVENTS/culturalshows.webp");
+    background-size: cover;
+    background-position: center;
+}
+.event:nth-of-type(8){
+    background-image: url("../images/EVENTS/workshops.webp");
+}
+.event:nth-of-type(9){
+    background-image: url("../images/EVENTS/eventsAndAnnuals.webp");
     background-position: center;
 }
 
@@ -98,6 +127,10 @@ header.event-page h1::before{
         hsl(0 0% 0% / 0.3) 20%,
         hsl(0 0% 0% / 0)
         );
+}
+
+textarea{
+    resize: none;
 }
 
 

@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <title>Events</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon/favicon-1.png">
+
 
 </head>
 
@@ -28,56 +30,56 @@
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Zumba Classes</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Aerobics</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Cross Fit Workout</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Wedding Choreography </h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Stage Shows</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Cultural Shows</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Workshops</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
-          <h2>Personal Training</h2>
+          <h2>Annual events</h2>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
         </div>
         <button class="quote-button"> GET QUOTATION </button>
@@ -86,22 +88,38 @@
         <div class="modal">
           <h2 id="quotation-heading">GET A QUOTATION</h2>
           <form id="quotation-form" action="" method="post">
-            <input type="text" name="name" id="" placeholder="Enter your name">
-            <input type="email" name="email" id="" placeholder="Enter your email">
-            <input type="tel" name="email" id="" placeholder="Enter Phone Number">
+            <div class="form-control">
+              <input type="name" name="name" id="booking-name" placeholder="Enter your name">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <input type="email" name="email" id="booking-email" placeholder="Enter your email">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <input id="booking-phone" type="number" name="phone" minlength="10" maxlength="10" placeholder="Enter Phone Number">
+              <i class="fas fa-check-circle"></i>
+              <i class="fas fa-exclamation-circle"></i>
+              <small>Error Message</small>
+            </div>
             <select name="event" id="">
-              <option>CHOOSE EVENT</option>
-              <option value="">EVENT - 1</option>
-              <option value="">EVENT - 2</option>
-              <option value="">EVENT - 3</option>
-              <option value="">EVENT - 4</option>
-              <option value="">EVENT - 5</option>
-              <option value="">EVENT - 6</option>
-              <option value="">EVENT - 7</option>
-              <option value="">EVENT - 8</option>
+              <option value="">CHOOSE EVENT</option>
+              <option value="Personal Training">Personal Training</option>
+              <option value="Zumba Classes">Zumba Classes</option>
+              <option value="Aerobics">Aerobics</option>
+              <option value="CrossFit Workout">CrossFit Workout</option>
+              <option value="Wedding Choreography">Wedding Choreography</option>
+              <option value="Stage Shows">Stage Shows</option>
+              <option value="Cultural Shows">Cultural Shows</option>
+              <option value="Workshops">Workshops</option>
+              <option value="Annual events">Annual events</option>
             </select>
-            <textarea name="message" id="quotation-form-message" cols="15" rows="5" placeholder="Brief us about your event"></textarea>
-            <input id="quote-submit" type="submit" value="Get quote">
+            <textarea name="message" id="quotation-form-message" cols="15" rows="5" maxlength="1000" placeholder="Brief us about your event" required></textarea>
+            <input id="quote-submit" type="submit" name="submit" value="SUBMIT">
           </form>
           <i id="modal-close" class="fas fa-times"></i>
         </div>
@@ -112,32 +130,32 @@
     <h1 data-aos="fade-down"> MEMORIES FROM PREVIOUS EVENTS </h1>
     <div class="previous-container">
       <div class="memory memory-1" data-aos="slide-right">
-        <img src="images/EVENTS/stageShows.jpg" alt="" class="memory-image">
+        <img src="images/EVENTS/event-1.webp" alt="" class="memory-image">
         <div class="memory-content">
-          <h3>Event Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ullam?</p>
+          <h3>Wedding Choreography</h3>
+          <p>Ring ceremony of Mr and Mrs Aggarwal. Wedding event choreographed by Voyage Dance Studio</p>
         </div>
       </div>
       <div class="memory memory-2" data-aos="slide-left">
         <div class="memory-content">
-          <h3>Event Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ullam?</p>
+          <h3>Beat The Step Season 1</h3>
+          <p>Beat The Step Season 1 organized by Voyage Dance Studio</p>
         </div>
-        <img src="images/EVENTS/stageShows.jpg" alt="" class="memory-image">
+        <img src="images/EVENTS/event-2.webp" alt="" class="memory-image">
       </div>
       <div class="memory memory-3" data-aos="slide-right">
-        <img src="images/EVENTS/stageShows.jpg" alt="" class="memory-image">
+        <img src="images/EVENTS/event-3.webp" alt="" class="memory-image">
         <div class="memory-content">
-          <h3>Event Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ullam?</p>
+          <h3>Beat The Step Season 2</h3>
+          <p>Beat The Step Season 2 by Voyage Dance Studio. Aryan Patra was our celebrity guest.</p>
         </div>
       </div>
       <div class="memory memory-4" data-aos="slide-left">
         <div class="memory-content">
-          <h3>Event Name</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ullam?</p>
+          <h3>Festive Ocassion</h3>
+          <p>Festival Ocassion, Ramayan by Voyage Dance Studio. Yogesh Dhama (BJP leader) was our chief guest.</p>
         </div>
-        <img src="images/EVENTS/stageShows.jpg" alt="" class="memory-image">
+        <img src="images/EVENTS/event-4.webp" alt="" class="memory-image">
       </div>
     </div>
   </section>
@@ -176,7 +194,11 @@
   <?php require 'assets/footer.php' ?>
   <script src="javascript/navbar.js"></script>
   <script src="javascript/events.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="javascript/formValidation.js"></script>
   <script>
-    </
+    formListener("quotation-form");
+  </script>
 </body>
+
 </html>

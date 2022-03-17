@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VDS</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon/favicon-1.png">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
@@ -100,7 +101,6 @@
                         <div class="register">REGISTER</div>
                     </div>
                 </div>
-               
                 <form action="" method="POST" id="booking">
                     <div class="form-control">
                         <input id="booking-name" type="name" name="name" placeholder="Name">
@@ -149,21 +149,21 @@
         </div>
         <div class="testimonial">
             <div class="testimonial-content">
-            My fiancee and myself didn’t like to dance but we wanted to do something special for our wedding. The instruction we received from Shubham Singhal sir was top-notch and we are very confident in our routine. It was a great experience for self-conscious beginners like us. Their team is very kind and awesome. Thanks for doing our event more beautiful.
+                My fiancee and myself didn’t like to dance but we wanted to do something special for our wedding. The instruction we received from Shubham Singhal sir was top-notch and we are very confident in our routine. It was a great experience for self-conscious beginners like us. Their team is very kind and awesome. Thanks for doing our event more beautiful.
                 <br>
                 <img src="images/user.png" alt=""><span><i> ~Shreya Jain </i></span>
             </div>
         </div>
         <div class="testimonial">
             <div class="testimonial-content">
-            I’ve been at multiple dance studios, but this one has the nicest staff, most beautiful and relaxing environment,  Would definitely recommend the classes.
+                I’ve been at multiple dance studios, but this one has the nicest staff, most beautiful and relaxing environment, Would definitely recommend the classes.
                 <br>
                 <img src="images/user.png" alt=""><span><i> ~Mansi </i></span>
             </div>
         </div>
         <div class="testimonial">
             <div class="testimonial-content">
-            It was great working with you. Shubham and team was very supportive during whole programme. They have taken care of all the prop usage and focused on each and every performance. They have created a memory for life which we have enjoyed a lot also. We will look forward to work more together in family functions.
+                It was great working with you. Shubham and team was very supportive during whole programme. They have taken care of all the prop usage and focused on each and every performance. They have created a memory for life which we have enjoyed a lot also. We will look forward to work more together in family functions.
                 <br>
                 <img src="images/user.png" alt=""><span><i> ~Pooja Aggarwal </i></span>
             </div>
@@ -185,112 +185,9 @@
     <script src="Javascript/particles.js-master/particles.js-master/demo/js/app.js"></script>
     <script src="Javascript/index.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="Javascript/formValidation.js"></script>
     <script>
-        //FOR FORM DATA VALIDATION
-        var form = document.getElementById('booking');
-        const name = document.getElementById('booking-name');
-        const email = document.getElementById('booking-email');
-        const phone = document.getElementById('booking-phone');
-        const date = document.getElementById('booking-date');
-
-
-        const isEmail = (insertedEmail) => {
-            var atSymbol = insertedEmail.indexOf("@");
-            if (atSymbol < 1) return false;
-            var dot = insertedEmail.lastIndexOf(".");
-            if (dot <= atSymbol + 2) return false;
-            if (dot === insertedEmail.length - 1) return false;
-            return true;
-        }
-
-        const setErrorMsg = (input, errormsgs) => {
-            const formControl = input.parentElement;
-            const small = formControl.querySelector('small');
-            formControl.className = "form-control data-error";
-            small.innerText = errormsgs;
-            console.log(formControl.classList);
-        }
-
-        const setSuccessMsg = (input) => {
-            const formControl = input.parentElement;
-            formControl.className = "form-control data-success";
-            console.log("success-message called");
-        }
-
-        const sendData = (sRate, count, insertedName) => {
-            if (sRate === count) {
-                const formData = new FormData(form);
-                fetch("validdata.php",{
-                    method:"POST",
-                    body:formData
-                }).then(res=>{
-                    if(res.status==200){
-                        swal("Confirmed!", "Your demo class has been booked " + insertedName + " !!!", "success");
-                        
-                    }else{
-                        swal("Confirmed!", "Your demo class has been booked " + insertedName + " !!!", "iNTERNAL SERVER ERROR");
-
-                    }
-                });
-
-            }
-        }
-
-        const successMsg = (insertedName) => {
-            let formcon = document.getElementsByClassName('form-control');
-            var count = formcon.length -2;
-            console.log("count "+count);
-            for (var i = 0; i < formcon.length; i++) {
-                if (formcon[i].className === "form-control data-success") {
-                    var sRate = 0 + i;
-                    sendData(sRate, count, insertedName);
-                    console.log("success rate " + sRate);
-                } 
-                else {
-                    return false;
-                }
-            }
-        }
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-            validate();
-        })
-
-        const validate = () => {
-            const insertedName = name.value.trim();
-            const insertedEmail = email.value.trim();
-            const insertedPhone = phone.value.trim();
-            const insertedDate = date.value.trim();
-
-            //validating name
-            if (insertedName === "") {
-                setErrorMsg(name, 'Name can not be blank');
-            } else if (insertedName.length <= 2) {
-                setErrorMsg(name, 'Name can not be of less than 3 characters');
-            } else {
-                setSuccessMsg(name);
-            }
-
-            //validating email
-            if (insertedEmail === "") {
-                setErrorMsg(email, 'Email can not be blank');
-            } else if (!isEmail(insertedEmail)) {
-                setErrorMsg(email, 'Not a valid email');
-            } else {
-                setSuccessMsg(email);
-            }
-
-            //validating phone
-            if (insertedPhone === "") {
-                setErrorMsg(phone, 'Phone number can not be blank');
-            } else if (insertedPhone.length != 10) {
-                setErrorMsg(phone, 'Not a valid phone number');
-            } else {
-                setSuccessMsg(phone);
-            }
-            successMsg(insertedName);
-        }
+        formListener("booking");
     </script>
     <?php include 'assets/footer.php' ?>
 

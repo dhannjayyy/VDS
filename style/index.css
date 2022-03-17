@@ -168,6 +168,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
 
 .mobile-nav-active{
   transform: translateX(100%) !important;
+  position:fixed;
 }
 
 .wave {
@@ -220,6 +221,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
 
   #mobile-nav{
     display: block; 
+    position: fixed;
   }
   
   #logo{
@@ -250,7 +252,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   }
 
   .hamburger-toggle #line-1{
-    transform: rotate(45deg) translate(5px,5px);
+    transform: rotateZ(45deg) translate(5px,5px);
   }
   .hamburger-toggle #line-2{
     transform: rotateZ(-45deg) translateY(-200%) translateX(25%);
@@ -770,6 +772,10 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
     transform: scale(1.05);
   }
   
+}
+
+.swal-icon{
+  overflow: clip !important;
 }
   
 

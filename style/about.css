@@ -23,11 +23,11 @@ body{
 
 header{
     background-image: url("../images/about.jpg");
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 15%;
+    padding-bottom: 15%;
     background-position: center;
+    background-size: cover;
     background-color: black;
-    background-blend-mode: color;
     position: relative;
     overflow-y: hidden;
     background-blend-mode: luminosity;
