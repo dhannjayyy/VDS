@@ -24,6 +24,7 @@ navSlide();
 //navbar animations
 const animation = () =>{
     const navigation = document.querySelector('.navigation');
+    console.log(navigation);
     window.addEventListener('load',()=>{
         navigation.style.transform = "translateY(0%)"
     })

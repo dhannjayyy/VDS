@@ -44,7 +44,7 @@ const sendData = (sRate, count, insertedName) => {
             if(form.getAttribute("id")==="booking"){
                 if(res.status==200){
                     swal("Confirmed!", "Your demo class has been booked " + insertedName + " !!!", "success");
-                    
+                    form.innerHTML = `<span class="form-submitted"> YOU HAVE SUCCESSFULLY BOOKED A DEMO CLASS </span>`;
                 }else{
                     swal( "Oops" , "Your demo class has not been booked " + insertedName + " !!!", "error");
     
@@ -52,6 +52,7 @@ const sendData = (sRate, count, insertedName) => {
             }else{
                 if(res.status==200){
                     swal("Confirmed!", "Your quotation request has been recieved " + insertedName + " !!!", "success");
+                    form.innerHTML = `<span class="form-submitted"> YOUR QUOTATION REQUEST HAS BEEN SUBMITTED SUCCESSFULLY </span>`;
                 }else{
                     swal("Oops" , "Some issue at our end...please try again later " + insertedName + " !!!", "error");
                 }
@@ -137,7 +138,6 @@ const dateValidation = () =>{
     minDate = minYear+"-"+minMonth+"-"+minDay;
     
     date.setAttribute("min",minDate);
-    console.log(minDate);
     
     //for maxdate setting within one week
     todayDate.setDate(todayDate.getDate()+14);
@@ -153,7 +153,6 @@ const dateValidation = () =>{
     }
     var maxDate = maxYear+"-"+maxMonth+"-"+maxDay;
     date.setAttribute("max",maxDate);
-    console.log(maxDate);
 }
 
 

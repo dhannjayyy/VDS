@@ -213,6 +213,8 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
 
   nav.navigation{
     margin-top: 2%;
+    position: relative;
+    z-index: 10;
   }
 
   nav.navigation ul{
@@ -252,7 +254,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   }
 
   .hamburger-toggle #line-1{
-    transform: rotateZ(45deg) translate(5px,5px);
+    transform: rotateZ(45deg) translate(3px,-1px);
   }
   .hamburger-toggle #line-2{
     transform: rotateZ(-45deg) translateY(-200%) translateX(25%);
@@ -656,7 +658,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
     transform-origin: center;
     overflow-y: hidden;
     background-size: cover;
-    padding: 12rem 0 0;
+    padding: 16rem 0 0;
     width:90%;
     max-width:30ch;
     box-shadow: 0 0 5px white;
@@ -666,16 +668,16 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   }
   
   .card-1{
-    background-image: url(../images/sagar.JPG);
+    background-image: url(../images/sagar1.jpg);
     background-position: center;
   }
   .card-2{
-    background-image: url(../images/suraj.JPG);
+    background-image: url(../images/suraj1.jpg);
     background-position: center;
     
   }
   .card-3{
-    background-image: url(../images/sagar.JPG);
+    background-image: url(../images/tanisha.JPG);
     background-position: left;
     
   }
@@ -899,6 +901,14 @@ small {
   border:2px solid #e74c3c;
 }
 
+.form-submitted{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  font-size: medium;
+}
+
 
 
 /* FORM END */
@@ -1019,8 +1029,8 @@ small {
 .testimonial-content{
   font-size: 1.2rem;
   width:80%;
-  padding: 2rem 1.5rem;
-  padding-top:5rem;
+  padding: 3rem 1.5rem;
+  /* padding-top:3rem; */
   margin: 3rem auto;
   line-height:200%;
   text-align: center;

@@ -38,7 +38,7 @@
     <div id="lower-footer" data-aos="slide-down" data-aos-offset="-200" data-aos-delay="250">
         <p>&copy 2021 Voyage Dance Studio All RIghts Reserved.</p>
         <div class="credits">
-            DEVELOPER : <a href="#" target="_blank"> Dhananjay</a>
+            DEVELOPER : <a href="https://www.linkedin.com/in/dhananjay-arora/" target="_blank"> Dhananjay</a>
         </div>
     </div>
 

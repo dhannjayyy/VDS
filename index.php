@@ -75,8 +75,7 @@
                 <div class="instructor-card card-1">
                     <div class="card-content">
                         <h2 class="instructor-name">SAGAR</h2>
-                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eos
-                            possimus
+                        <p class="card-body">Bollywood and Hiphop
                         </p>
                         <div class="register">REGISTER</div>
                     </div>
@@ -84,20 +83,14 @@
                 <div class="instructor-card card-2">
                     <div class="card-content">
                         <h2 class="instructor-name">SURAJ</h2>
-                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eos
-                            possimus
-                            vero quam minima
-                            harum?</p>
+                        <p class="card-body">B-Boying and Hiphop</p>
                         <div class="register">REGISTER</div>
                     </div>
                 </div>
                 <div class="instructor-card card-3">
                     <div class="card-content">
-                        <h2 class="instructor-name">SAGAR</h2>
-                        <p class="card-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet eos
-                            possimus
-                            vero quam minima
-                            harum?</p>
+                        <h2 class="instructor-name">Tanisha Singh</h2>
+                        <p class="card-body">Bollywood and folk</p>
                         <div class="register">REGISTER</div>
                     </div>
                 </div>
@@ -141,6 +134,14 @@
         <span><i class="fas fa-chevron-left"></i></span>
         <div class="testimonial">
             <div class="testimonial-content">
+                It's been great working with you all. We have enjoyed a lot and we showed up best performances in my brother's engagement. Shubham being very cooperative in every matter whether it is of time or place, he pulled up by many troubles but always stood by his commitments. His team members are also talented and supportive. You can give a try to them, one will not get a chance to complain.
+                We'll look forward for more bookings with him.😊
+                Thanks for your time and support.
+                <br><img src="images/user.png" alt=""><span><i> ~Kashish Aggarwal </i></span>
+            </div>
+        </div>
+        <div class="testimonial">
+            <div class="testimonial-content">
                 I was there for a dance party and I had a blast. I will keep going and learn more dances, lot’s of awesome people there. Staff is kind too. If you have not been, I would definitely encourage you to check it out.
 
                 <br>
@@ -168,16 +169,7 @@
                 <img src="images/user.png" alt=""><span><i> ~Pooja Aggarwal </i></span>
             </div>
         </div>
-        <div class="testimonial" data-aos="slide-left" data-aos-delay="250">
-            <div class="testimonial-content">
-                It's been great working with you all. We have enjoyed a lot and we showed up best performances in my brother's engagement. Shubham being very cooperative in every matter whether it is of time or place, he pulled up by many troubles but always stood by his commitments. His team members are also talented and supportive. You can give a try to them, one will not get a chance to complain.
-                We'll look forward for more bookings with him.😊
-                Thanks for your time and support.
-                <br><img src="images/user.png" alt=""><span><i> ~Kashish Aggarwal </i></span>
-            </div>
-        </div>
         <span><i class="fas fa-chevron-right"></i></span>
-
     </section>
 
     <script src="Javascript/index.js"></script>

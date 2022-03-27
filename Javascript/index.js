@@ -15,7 +15,9 @@ const navSlide = () =>{
             element.style.transitionDelay = `${index*delay}s`;
         });
         //hamburger animation
-        // burger.classList.toggle('hamburger-toggle');
+        burger.classList.toggle('hamburger-toggle');
+        console.log(burger.classList);
+
     });
 }
 
@@ -75,7 +77,6 @@ const changeTestimonial = () =>{
     leftButton.addEventListener("click",()=>{
         carouselSection.scrollBy(-width,0);
     });
-
 }
 
 
