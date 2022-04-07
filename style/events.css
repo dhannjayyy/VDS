@@ -282,12 +282,9 @@ textarea{
 nav.navigation{
     transition: all 1000ms ease;
     transition-delay: 1000ms;
+    z-index: 10;
   }
   
-
-#mobile-nav{
-    z-index:10000;
-}
 
 .hamburger-toggle div{
     background-color:white !important;

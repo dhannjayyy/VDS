@@ -260,7 +260,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
     transform: rotateZ(-45deg) translateY(-200%) translateX(25%);
   }
   .hamburger-toggle #line-3{
-    display: none;
+    display: none!important;
     width:150%;
   }
   #hamburger #line-2, #hamburger #line-3{
@@ -1067,7 +1067,10 @@ small {
 
 @media (max-width:425px){
   .testimonial-content{
-    font-size: 3vh;
+    font-size: 2vh;
+  }
+  #testimonials h2{
+    font-size: 4vh;
   }
 }
 
@@ -1217,6 +1220,12 @@ footer{
 
 .wave-footer .shape-fill {
   fill: #EFEFEF;
+}
+
+.top-button{
+  position:absolute;
+  bottom: 2%;
+  right: 2%;
 }
 
 @media (max-width:768px){

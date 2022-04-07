@@ -242,20 +242,18 @@ ol li:nth-of-type(4)::after{
     color:#3D0000 !important;
 }
 #hamburger{
-    z-index:1000000;
     margin-top: 0.25%;
 }
 #hamburger div{
     background-color: #3D0000 ;
     height:2px;
 }
-
-#mobile-nav{
-    z-index:10000;
-}
-
 .hamburger-toggle div{
     background-color:white !important;
+}
+
+#mobile-nav{
+    z-index: 101;
 }
 
 /* OVERWRITING FOOTER */
