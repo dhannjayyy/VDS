@@ -6,6 +6,7 @@ const navSlide = () =>{
 
     const mobile_nav = document.getElementById("mobile-nav");
     const mobile_nav_items = document.querySelectorAll(".mobile");
+    const navigation = document.querySelector('.navigation');
     const delay = 0.1;
 
     burger.addEventListener('click',()=>{
@@ -16,9 +17,31 @@ const navSlide = () =>{
         });
         //hamburger animation
         burger.classList.toggle('hamburger-toggle');
-        console.log(burger.classList);
-
     });
+    document.addEventListener('scroll',()=>{
+        if(scrollY>610){
+            navigation.style.position = "fixed";
+            navigation.style.backgroundColor = "#3D0000";
+            navigation.style.marginTop = "0";
+            navigation.style.width = "100%";
+            navigation.style.paddingBottom = "0%";
+            navigation.style.paddingTop = "3%";
+            burger.style.position = "fixed";    
+            burger.style.right = "2%";
+            for(var i=0;i<burger.childElementCount;i++){
+                burger.children[i].style.display = "list-item";
+                burger.children[i].style.listStyleType = "none";
+                burger.children[i].style.height = "2px";
+            }
+        }
+        if(scrollY>610 && mobile_nav.className =="mobile-nav-active"){
+            burger.children[2].style.display = "none";
+        }
+        if(scrollY<=610){
+                navigation.style.backgroundColor = "transparent";
+                navigation.style.position = "";
+            }
+    })
 }
 
 

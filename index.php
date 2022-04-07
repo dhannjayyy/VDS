@@ -20,8 +20,7 @@
         <div class="hero-content">
             <div>
                 <h1 id="vds">VDS</h1>
-                <p id="hero-para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum suscipit qui, est
-                    quisquam maxime
+                <p id="hero-para"> Dance for the best moments of yor life. Enroll and learn professionally.
                 </p>
             </div>
             <img class="hero-image" src="images/images/Mobile -1.svg" alt="">
@@ -172,12 +171,11 @@
         <span><i class="fas fa-chevron-right"></i></span>
     </section>
 
-    <script src="Javascript/index.js"></script>
-    <script src="Javascript/particles.js-master/particles.js-master/particles.js"></script>
-    <script src="Javascript/particles.js-master/particles.js-master/demo/js/app.js"></script>
-    <script src="Javascript/index.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/particles.js-master/particles.js-master/particles.js"></script>
+    <script src="javascript/particles.js-master/particles.js-master/demo/js/app.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="Javascript/formValidation.js"></script>
+    <script src="javascript/formValidation.js"></script>
     <script>
         formListener("booking");
     </script>

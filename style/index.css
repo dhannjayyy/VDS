@@ -155,7 +155,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
 #mobile-nav{
   width:50%;
   height:100vh;
-  background-color:#813131e3;
+  background-color:#3D0000;
   backdrop-filter: blur(10px);
   position:absolute;
   top:0;
@@ -245,7 +245,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
   
   #hamburger div{
     overflow:visible;
-    height:1%;
+    height:2px;
     width:300%;
   }
 
@@ -723,7 +723,7 @@ nav.navigation ul li:nth-child(1) a, nav.navigation ul li:nth-child(2) a, nav.na
     color:#fff;
     padding: 0.5em 1.25em;
     border-radius: 0.25rem;
-    box-shadow: 0 0 10px#E3A6F2;
+    box-shadow: 0 0 10px #E3A6F2;
     transition: all 500ms ease;
   }
   .register:hover, .register:focus{
@@ -1134,6 +1134,9 @@ footer{
 .footer-socials{
   font-size: 200%;
   cursor: pointer;
+}
+.fab{
+  color: #000 !important;
 }
 
 #footer-phone, #footer-mail, #footer-marker{

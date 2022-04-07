@@ -24,13 +24,13 @@
             </div>
             <div>
                 <span class="dot dot-instagram">
-                    <i class="footer-socials fab fa-instagram"></i>
+                    <a href="https://instagram.com/voyagedancestudio?utm_medium=copy_link"><i class="footer-socials fab fa-instagram"></i></a>
                 </span>
                 <span class="dot">
-                    <i class="footer-socials fab fa-facebook"></i>
+                    <a href="https://youtube.com/channel/UCku-Mtl4U8Gv9ChfgY5WMdA"><i class="footer-socials fab fa-youtube"></i></a>
                 </span>
                 <span class="dot">
-                    <i class="footer-socials fab fa-whatsapp"></i>
+                    <a href="https://wa.me/7906756977"><i class="footer-socials fab fa-whatsapp"></i></a>
                 </span>
             </div>
         </div>

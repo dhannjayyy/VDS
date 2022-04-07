@@ -24,63 +24,64 @@
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Personal Training</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          We will create a speacial class for you. We will help you start on the proper diet and right mind set.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Zumba Classes</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          Zumba makes yo feel happy, healthy, strong, confident, amazing, fresh, and unstoppable.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Aerobics</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          Step up and burn some calories. Works out your arms, legs, and back, good for stamina, improves heart beat.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
           <h2>Cross Fit Workout</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          Cross fit is a type of trainig used that is considered high intensity. it is based on varios exercises and functional movement.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
           <h2>Wedding Choreography </h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          We customize Choreography in different ways to suit your need. Make yor wedding more entertainig with us.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-left">
         <div class="event-content">
           <h2>Stage Shows</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          Our creative team brings different, innovative and matchless ideas for different events.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Cultural Shows</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          Strong network, all time customer support, professional team, Innovative ideas, affordable services.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Workshops</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          We conduct and provide workshops.
+          Get in the right groove and basic techniques in 3 days of workshop.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
       <div class="event" data-aos="slide-right">
         <div class="event-content">
           <h2>Annual events</h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, id!
+          We always try to surprise people and create the wow effect, exceeded their expectations in the most ordinary things.
         </div>
         <button class="quote-button"> GET QUOTATION </button>
       </div>
