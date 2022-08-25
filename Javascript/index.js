@@ -18,7 +18,7 @@ const navSlide = () => {
         //hamburger animation
         burger.classList.toggle('hamburger-toggle');
     });
-    if (window.innerWidth < 930) {
+ if (window.innerWidth < 930) {
         document.addEventListener('scroll', () => {
             if (scrollY > 610) {
                 navigation.style.position = "fixed";
@@ -34,6 +34,9 @@ const navSlide = () => {
                     burger.children[i].style.listStyleType = "none";
                     burger.children[i].style.height = "2px";
                 }
+            }
+            if(mobile_nav.className == "mobile-nav-active"){
+                burger.children[2].style.display = "none";
             }
             if (scrollY <= 610) {
                 for (var i = 0; i < burger.childElementCount; i++) {
@@ -60,6 +63,7 @@ const animation = () => {
             heroBefore.style.height = "0",
             heroAfter.style.height = "0",
             navigation.style.transform = "translateY(0%)",
+            navigation.style.transform = "translateY(0%)",
             vds.style.transform = "translateX(0%)",
             heroPara.style.transform = "translateX(0%)",
             setTimeout(() => {
@@ -76,14 +80,24 @@ const registration = () => {
     const register = document.querySelectorAll(".register");
     const cards = document.querySelectorAll(".instructor-card")
     const form = document.getElementById("booking");
-
+    const closeButton = document.querySelector(".demo-form-close-button");
+    
     register.forEach((element) => {
         element.addEventListener("click", () => {
             form.classList.add("booking-active");
             cards.forEach((element) => {
                 element.style.transform = "rotateY(180deg)";
+                element.style.WebkitTransform = "rotateY(180deg)";
             })
         });
+    })
+    closeButton.addEventListener("click",()=>{
+        console.log("closeButton")
+        form.classList.remove("booking-active");
+        cards.forEach((element) => {
+            element.style.transform = "rotateY(0deg)";
+            element.style.WebkitTransform = "rotateY(0deg)";
+        })
     })
 }
 
