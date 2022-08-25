@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VDS</title>
+    <title>VDS - Voyage Dance Studio</title>
     <link rel="icon" type="image/x-icon" href="images/favicon/favicon-1.png">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -20,7 +20,7 @@
         <div class="hero-content">
             <div>
                 <h1 id="vds">VDS</h1>
-                <p id="hero-para"> Dance for the best moments of yor life. Enroll and learn professionally.
+                <p id="hero-para"> Dance for the best moments of your life. Enroll and learn professionally.
                 </p>
             </div>
             <img class="hero-image" src="images/images/Mobile -1.svg" alt="">
@@ -73,28 +73,29 @@
             <section id="cards">
                 <div class="instructor-card card-1">
                     <div class="card-content">
-                        <h2 class="instructor-name">SAGAR</h2>
-                        <p class="card-body">Bollywood and Hiphop
+                        <h2 class="instructor-name">SHUBHAM SINGHAL</h2>
+                        <p class="card-body">Masterclass
                         </p>
                         <div class="register">REGISTER</div>
                     </div>
                 </div>
                 <div class="instructor-card card-2">
                     <div class="card-content">
-                        <h2 class="instructor-name">SURAJ</h2>
-                        <p class="card-body">B-Boying and Hiphop</p>
+                        <h2 class="instructor-name">TANISHA SINGH</h2>
+                        <p class="card-body">Bollywood</p>
                         <div class="register">REGISTER</div>
                     </div>
                 </div>
                 <div class="instructor-card card-3">
                     <div class="card-content">
-                        <h2 class="instructor-name">Tanisha Singh</h2>
-                        <p class="card-body">Bollywood and folk</p>
+                        <h2 class="instructor-name">SAGAR & SURAJ</h2>
+                        <p class="card-body">Bollywood, B-Boying, and Hiphop</p>
                         <div class="register">REGISTER</div>
                     </div>
                 </div>
                 <form action="" method="POST" id="booking">
-                    <div class="form-control">
+                    <button class="demo-form-close-button">X</button>
+                    <div class="form-control demo-form-name">
                         <input id="booking-name" type="name" name="name" placeholder="Name">
                         <i class="fas fa-check-circle"></i>
                         <i class="fas fa-exclamation-circle"></i>
@@ -171,11 +172,11 @@
         <span><i class="fas fa-chevron-right"></i></span>
     </section>
 
-    <script src="javascript/index.js"></script>
-    <script src="javascript/particles.js-master/particles.js-master/particles.js"></script>
-    <script src="javascript/particles.js-master/particles.js-master/demo/js/app.js"></script>
+    <script src="Javascript/index.js"></script>
+    <script src="Javascript/particles.js-master/particles.js-master/particles.js"></script>
+    <script src="Javascript/particles.js-master/particles.js-master/demo/js/app.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="javascript/formValidation.js"></script>
+    <script src="Javascript/formValidation.js"></script>
     <script>
         formListener("booking");
     </script>
