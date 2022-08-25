@@ -41,7 +41,6 @@ const navSlide = () =>{
                 for (var i = 0; i < burger.childElementCount; i++) {
                     burger.children[i].style.display = "";
                 }
-                navigation.style.backgroundColor = "transparent";
                 navigation.style.position = "";
             }
         })
@@ -54,10 +53,30 @@ navSlide();
 //navbar animations
 const animation = () =>{
     const navigation = document.querySelector('.navigation');
-    console.log(navigation);
     window.addEventListener('load',()=>{
         navigation.style.transform = "translateY(0%)"
     })
 }
 
 animation();
+
+//for changing navlinks 
+
+const changeLinks = () =>{
+    const currentLocation = window.location.href;
+    const navLinkUL = document.getElementById("nav-ul");
+    const navLinkULMobile = document.getElementById("nav-ul-mobile");
+    
+    if(currentLocation === "http://localhost/voyagedancestudio/events.php" || currentLocation === "http://localhost/voyagedancestudio/about.php"){
+        navLinkUL.children[1].children[0].setAttribute("href","index.php#particles-js");
+        console.log(navLinkUL.children[1].children[0]);
+        navLinkUL.children[3].children[0].setAttribute("href","index.php#testimonials");
+        navLinkULMobile.children[1].children[0].setAttribute("href","index.php#particles-js");
+        navLinkULMobile.children[3].children[0].setAttribute("href","index.php#testimonials");
+    }
+}
+
+changeLinks();
+
+
+
